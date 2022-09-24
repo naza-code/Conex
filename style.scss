@@ -1,0 +1,460 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: auto;
+  max-width: 1100px;
+}
+
+a{
+  text-decoration: none;
+}
+
+$maincolor:  steelblue;
+
+// Utilities
+.btn{
+  background-color: rgb(4, 4, 32);
+  display: inline-block;
+  padding:1rem 2rem;
+  border-radius: 25px;
+  transition: all 2s;
+
+  &:hover{
+    background-color: #fff;
+    color: rgb(4, 4, 32);
+  }
+
+}
+
+.btnlight{
+  background-color: #fff;
+
+  &:hover{
+    background-color: rgb(4, 4, 32);
+    color: #fff;
+  }
+}
+
+
+// NavBar
+#header{
+  background-color: $maincolor;
+  height: 100vh;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+ul{
+  display: flex;
+  margin-right: 25rem;
+}
+ ul li{
+  list-style: none;
+  padding-top: 1rem;
+ }
+ 
+ ul li a{
+   color: #fff;
+   padding: 0.75rem;
+ }
+
+ h1{
+   color: #fff;
+   padding-top: 0.25rem;
+ }
+
+ ul li a:hover{
+   opacity: 0.9;
+  text-decoration: underline;
+ }
+
+}
+
+
+// Section A
+.sectiona{
+  text-align: center;
+  padding-top: 2rem;
+  color: #fff;
+
+  h1{
+    font-size: 4rem;
+  }
+
+  p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  a{
+    color: #fff;
+    transition: all 3s;
+
+    
+  }
+
+  a:hover{
+    color: slateblue;
+    opacity: 0.9;
+  }
+
+}
+
+// Section2a
+.sectiona2{
+  img{
+    width: 170px;
+    padding-top: 1rem;
+    animation: animate1 1s ease-in-out forwards;
+    transform: translateX(-1200px);
+  }
+
+  @keyframes animate1{
+    to{transform: translateX(0);
+
+    }
+
+  
+  }
+  ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // grid-gap: 1rem;
+    padding-left: 10rem;
+    
+  }
+
+  // div{
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  // }
+
+  // img{
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 20px;
+  //   padding-right: 150rem;
+  // }
+}
+.phone div img{
+  padding-top: 5rem;
+  padding-left: 3.5rem;
+
+}
+
+
+
+
+// .ig{
+//   position: relative;
+//   top: 0;
+//   left: 0;
+
+//   img{
+//     position: absolute;
+//     left: 220px;
+//     // bottom: 120px;
+//   }
+// }
+
+// SEction 2
+#section2{
+  margin-top: 2rem;
+}
+.sponsor{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 1rem;
+  padding-left: 5rem;
+
+  img{
+    width: 170px;
+  }
+}
+
+
+
+// Section Three
+.sectionthree{
+  margin-top: 2rem;
+}
+.threecontent{
+  padding-top: 1rem;
+  background-color: rgb(224, 214, 214);
+  width: 25rem;
+  padding-left: 0.75rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  transform: translateX(-1200px);
+  animation: animate2 2s ease-in forwards;
+
+  @keyframes animate2{
+    to{
+      transform: translateX(0);
+    }
+  }
+  
+  h2{
+    font-size:2.5rem;
+    color:rgb(4, 4, 32); 
+  }
+
+  p{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(4, 4, 32);
+  }
+
+  a{
+    color: #fff;
+  margin-bottom: 1rem;
+opacity: 0.9;}
+  
+}
+
+.positioncontent{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content{
+  background-color: rgb(4, 4, 32);
+  width: 25rem;
+  margin-left: 25rem;
+  margin-bottom: 5rem;
+  padding-left: 5.75rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+  right: 50px;
+  bottom: 90px;
+  transform:rotate(-30deg);
+  animation: animate3 ease-in-out forwards 2s;
+
+  @keyframes animate3{
+    to{
+      transform: rotate(0);
+    }
+  }
+  
+  // right: 0.25rem;
+  
+
+
+
+
+  h2{
+    color: #fff;
+    padding-top: 1rem;
+  }
+
+  p{
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  a{
+    color:rgb(4, 4, 32) ;
+    margin-bottom: 1rem;
+  }
+}
+
+
+// SectionFour
+.content4{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  animation: animate4 2s ease-in-out forwards;
+  transform: rotate(-25deg);
+
+  @keyframes animate4{
+    to{
+      transform:rotate(0);}
+    }
+
+  h1{
+    color: rgb(4, 4, 32) !important;
+    margin-top: 0.75rem;
+    
+    
+  }
+  p{
+    color: rgb(4, 4, 32)  !important;
+    margin-top: 0.75rem;
+  }
+
+  i{
+    margin-top: 1rem;
+  }
+}
+
+#sectionfour{
+
+  text-align: center;
+  h2{
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+    color: rgb(4, 4, 32);
+    
+  }
+
+  p{
+    margin-bottom: 1rem;
+  }
+}
+
+
+.fourcontent h3{
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+// Section Five
+#five{
+  margin-top: 10rem;
+  background-color: rgb(224, 214, 214);
+  text-align: center;
+  padding-top: 2rem;
+
+  h1{
+    margin-top: 1rem;
+    color: rgb(4, 4, 32);
+  }
+
+  a{
+    margin-top: 1rem;
+    color: #fff;
+    
+  }
+
+  p{
+    color: rgb(4, 4, 32);
+  }
+
+  h2{
+    margin-top: 8rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+span{
+  color: $maincolor;
+}
+
+// Section Five
+.quote{
+  font-size: 5rem;
+}
+
+.sixcontent{
+  display: grid;
+  grid-template-columns:( 1fr 6fr);
+  padding-left: 2rem;
+  margin-top: 2rem;
+  color: rgb(4, 4, 32);
+  grid-gap: 1rem;
+
+  img{
+    width: 170px;
+    
+  }
+
+  p{
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    color: rgb(4, 4, 32);
+  }
+
+  h3{
+    padding-left: 2rem;
+    color: rgb(4, 4, 32);
+  
+  }
+
+  h2{
+    padding-left: 2rem;
+    color: rgb(4, 4, 32);
+    
+  }
+
+  
+
+}
+
+.bgdark{
+  background-color: $maincolor;
+}
+
+.bglight{
+  background-color: rgb(224, 214, 214);
+}
+
+
+// Seven Sectrion
+
+#seven{
+  background-color: $maincolor;
+
+  img{
+    width: 100px;
+    text-align: center;
+    padding-left: 32rem;
+    margin-top: 2rem;
+    
+    
+  }
+}
+.sevencontent{
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 2rem;
+  
+
+  a{
+    color: #fff;
+  }
+
+  p{
+    margin-bottom: 2rem;
+  }
+
+  h2{
+    margin-bottom: 1rem;
+}
+
+
+
+
+}
+
+#mainfooter{
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

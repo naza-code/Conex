@@ -1,0 +1,123 @@
+
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  
+
+
+ ul{
+  //  display: grid;
+  //  grid-template-columns: repeat(3 , 1fr);
+  //  grid-gap: 2rem;
+  display: block;
+  justify-self: center;
+  
+  
+ }
+
+  li  {
+  
+   border-bottom: 1px dotted #fff;
+   width: 95vw;
+ }
+
+ h1{
+   padding-top: 2.5rem;
+   padding-left: 0.75rem;
+ }
+
+  
+}
+
+// Sectiona 2
+.sectiona2{
+  img{
+    display: none;
+  }
+}
+
+// Section2
+.sponsor{
+  img{
+    width: 100px;
+  }
+}
+
+// SectionThree
+.sectionthree{
+  .threecontent{
+    margin-left: 6rem;
+    background-color: #fff;
+  }
+
+  .content{
+    margin-right: 2rem;
+  }
+}
+
+
+// SectionFour
+.content4{
+  display: block;
+  // font-size: 0.8rem;
+  // grid-template-columns: 1fr;
+}
+
+
+@media(max-width:600px){
+  .content{
+    display: none;
+
+  }
+
+  .threecontent{
+    margin-bottom: 2rem;
+  }
+
+  .sponsor{
+    img{
+      width: 70px;
+    }
+  }
+
+  // SECTION FIVE
+  #five{
+    background-color: #fff;
+    width: 70%;
+    margin-left: 3rem;
+    padding: 1rem;
+  }
+
+  // Six Content
+  #six{
+    // font-size: 0.8rem;
+    padding-right: 5rem;
+  }
+
+  #six .bglight{
+    background-color: #fff;
+
+  }
+  .sixcontent{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img{
+     
+     display: none;
+    
+    }
+  }
+}
+
+#seven{
+  padding: 1rem;
+  
+}
+.guy-seven{
+  display: none;
+}
+
